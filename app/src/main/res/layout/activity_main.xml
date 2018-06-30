@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="welcome to our cosmo quiz app!"
+            android:textAllCaps="true"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:textColor="#000080"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="start"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:onClick="startQuiz"/>
+        <EditText
+            android:id="@+id/name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Let The Games Begin!"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#000080"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="1)We live in the milky way"/>
+        <RadioGroup
+            android:id="@+id/milky_way_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/yes_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:checked="false" />
+            <RadioButton
+                android:id="@+id/no_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:checked="false" />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="2)Earth is the closest planet to the sun"/>
+        <RadioGroup
+            android:id="@+id/closest_planet_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/yes_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:checked="false" />
+            <RadioButton
+                android:id="@+id/no_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no"
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="3)The sun revolves around the earth"/>
+        <RadioGroup
+            android:id="@+id/sun_revolves_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/earth_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes!"
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/of_course_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Of course not!"
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="20sp" />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="4)The image below is that of the earth during dry weather"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jupiter"
+            android:layout_gravity="center"/>
+        <RadioGroup
+            android:id="@+id/earth_image_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/image_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/image_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No!"
+                android:textStyle="bold"
+                android:checked="false"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="5)Which of the following planets is farthest from the sun?"/>
+
+        <CheckBox
+            android:id="@+id/mercury_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercury"
+            android:textSize="20sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+        <CheckBox
+            android:id="@+id/venus_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venus"
+            android:textSize="20sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+        <CheckBox
+            android:id="@+id/apes_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Planet Of The Apes"
+            android:textSize="20sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+        <CheckBox
+            android:id="@+id/saturn_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturn"
+            android:textSize="20sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+        <CheckBox
+            android:id="@+id/neptune_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neptune"
+            android:textSize="20sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+        <CheckBox
+            android:id="@+id/jupiter_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jupiter"
+            android:textSize="20sp"
+            android:paddingLeft="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:text="6)Which planet is the smallest ?"/>
+
+        <EditText
+            android:id="@+id/smallest_planet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="submit"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:onClick="submitQuiz"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textSize="20sp"
+            android:textColor="#000080"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:text="Thanks for stopping by"/>
+
+    </LinearLayout>
+</ScrollView>
